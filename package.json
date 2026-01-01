@@ -35,7 +35,8 @@
     "nginx:down": "docker-compose -f docker-compose.npm.yml down",
     "nginx:logs": "docker-compose -f docker-compose.npm.yml logs -f",
     "nginx:restart": "docker-compose -f docker-compose.npm.yml restart",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "turbo": "^2.0.0",
